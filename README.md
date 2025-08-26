@@ -1,4 +1,4 @@
-#Running Python on Nvidia Geforce 740M on a docker Container<br/>
+###Running Python on Nvidia Geforce 740M on a docker Container<br/>
 ##System : Ubuntu 24.04LTS<br/>
 ##CuPy version: 9.6.0<br/>
 ##CUDA runtime version: 10.2<br/>
@@ -6,7 +6,7 @@
 
 The different codes shows some benchmarks on the compute capability with large matrices (~10k x 10k) to see a clear GPU speedup, even for legacy GPUs<br/>
 
-###Notes:<br/>
+#Notes:<br/>
 
   Use cp.random.rand() to avoid CPU→GPU transfer overhead.<br/>
   cp.cuda.Stream.null.synchronize() ensures the GPU finishes before measuring time.<br/>
@@ -23,7 +23,7 @@ The different codes shows some benchmarks on the compute capability with large m
 
 ##Results example : gpu_test.py<br/>
 
-###Test 1 :  matrix_size = 10000 x 10000 <br/>
+#Test 1 :  matrix_size = 10000 x 10000 <br/>
 
   1. Running on CPU with NumPy...<br/>
      CPU Time: 23.1901 seconds<br/>
@@ -34,7 +34,7 @@ The different codes shows some benchmarks on the compute capability with large m
   ✅ Verification successful: CPU and GPU results match.<br/>
   🚀 GPU was approximately 3.41 times faster than the CPU.<br/>
 
-###Test 2 :  matrix_size = 1000 x 1000 <br/>
+#Test 2 :  matrix_size = 1000 x 1000 <br/>
   
   1. Running on CPU with NumPy...<br/>
      CPU Time: 0.0171 seconds<br/>
