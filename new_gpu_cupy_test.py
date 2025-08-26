@@ -4,7 +4,7 @@ import cupy as cp
 import time
 
 # Matrix size (adjust to your GPU memory, 4000 is usually safe for GT 740M)
-N = 6000
+N = 4000
 
 # ---------------- CPU Benchmark ----------------
 print(f"Generating {N}x{N} matrices on CPU...")
